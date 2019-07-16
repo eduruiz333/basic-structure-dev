@@ -1,0 +1,237 @@
+/** Global **/
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -ms-font-smoothing: antialiased !important;
+  min-height: 100%;
+}
+
+/** Body **/
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: $bgBody;
+
+  .container {
+    background-color: $white;
+  }
+
+  //Form fileds
+  .custom-file-control,
+  .form-control,
+  .is-focused .custom-file-control,
+  .is-focused .form-control {
+    box-shadow: none !important;
+    background-image: linear-gradient(0deg, #f2994a 2px, rgba(242, 153, 74, 0) 0),
+    linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0) !important;
+  }
+  .form-group.line-light {
+    background-image: linear-gradient(0deg, #acacac 2px, rgba(242, 153, 74, 0) 0),
+    linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0) !important;
+  }
+  label {
+    color: $textGreyLight !important;
+  }
+
+  //Datapicker
+  .dtp {
+    div.dtp-date,
+    table.dtp-picker-days tr>td>a.selected {
+      background-color: #f2994a;
+    }
+    >.dtp-content>.dtp-date-view>header.dtp-header {
+      background-color: #c27a3b;
+    }
+    .p10>a {
+      color: #ffffff;
+    }
+  }
+
+  //Botões
+  .btn {
+    &.btn-default {
+      background-color: $gray;
+      color: $white;
+      &:hover {
+        background-color: $mainClr;
+      }
+    }
+
+    &.btn-orange {
+      background-color: $mainClr;
+      color: $white;
+    }
+
+    &.slim {
+      padding: 2px 10px;
+    }
+  }
+
+  //Dark box
+  .greydark {
+    background-color: $grayDark;
+    color: $textLight;
+
+    .border-bottom,
+    &.border-bottom {
+      border-bottom: solid 1px $textGreyLight !important;
+    }
+    .border-top,
+    &.border-top {
+      border-top: solid 1px $textGreyLight !important;
+    }
+
+    .nav-link {
+      color: $textLight;;
+      &.active {
+        color: $mainClr;
+      }
+    }
+    .nav-tabs {
+      border-bottom: solid 1px $textGreyLight;
+    }
+  }
+
+  //Vertical align
+  .v-align {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .top {
+      align-self: flex-start;
+    }
+    .bottom {
+      align-self: flex-end;
+    }
+  }
+
+  //R$
+  .currency {
+    &:before {
+      content: "R$ ";
+    }
+  }
+}
+
+/** CONTENT **/
+//Tab nav
+.nav-tabs .nav-link {
+  border-bottom: solid 1px transparent;
+  height: 50px;
+  &.active,
+  &:hover {
+    border-bottom: solid 1px $mainClr;
+  }
+}
+
+//Checkin checkout dates
+.datapicker .card-body,
+.about .card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.datapicker {
+  i {
+    font-size: 18px;
+  }
+  .card-body {
+    .row {
+      align-items: baseline;
+    }
+
+    .fa-calendar-alt {
+      color: $textGreyLight;
+    }
+  }
+}
+
+//About & contact
+.about .card-body {
+  .map-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//Pictures
+.pictures {
+  a {
+    color: $textDark !important;
+  }
+  .img {
+    display: flex;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .description {
+      width: fit-content;
+      line-height: 1em;
+      background: rgba(255, 255, 255, .5);
+    }
+  }
+}
+
+//Room info
+.room-info {
+  .infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .small {
+    color: $textLight;
+  }
+
+  p.details {
+    font-size: 10px;
+    margin: 0;
+    color: $textDefault;
+    i {
+      font-size: 10px;
+      color: $textDefault;
+    }
+  }
+
+  .amenity {
+    padding-bottom: 10px;
+    i {
+      font-size: 15px;
+    }
+  }
+
+  span {
+    margin-right: 15px;
+
+    &.promo {
+      font-size: .7rem;
+      color: $textGreyLight;
+      text-decoration: line-through;
+    }
+    &.value {
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+
+
+
+
+
+

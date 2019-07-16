@@ -1,0 +1,48 @@
+// xs — Extra Small Screens
+@media (min-width: 320px) {
+  //Datapicker
+  .datapicker {
+    .form-group {
+      width: 100%;
+    }
+  }
+
+  //Pictures
+  .pictures {
+    .img {
+      height: 150px;
+    }
+  }
+}
+
+// s — Small Screens
+@media (min-width: 640px) {
+
+}
+
+// m — Medium Screens
+@media (min-width: 960px) {
+
+}
+
+// l — Large Screens
+@media (min-width: 1200px) {
+  //Datapicker
+  .datapicker {
+    .form-group {
+      width: unset;
+    }
+  }
+
+  //Pictures
+  .pictures {
+    .img {
+      height: 200px;
+    }
+  }
+}
+
+// xl — Extra Large Screens
+@media (min-width: 1600px) {
+
+}
